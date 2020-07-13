@@ -1,6 +1,9 @@
 # Exploring Terraform
 
-### NEVER push secrets.tfvars to version control
+### Important Notes
+
+- NEVER push secrets.tfvars to version control
+- You can store .tfstate files in version control
 
 Open Terraform console:
 

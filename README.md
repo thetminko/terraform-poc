@@ -6,6 +6,8 @@
 - You can store Terraform states locally (.tfstate files) in version control but there could still be some sensitive information. (Better to store remotely in S3, etc.)
 - You can also store Terraform states remotely in S3, consul, terraform enterprise using Terraform backend.
 
+### Useful Commands
+
 Open Terraform console:
 
 `terraform console`

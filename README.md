@@ -3,7 +3,8 @@
 ### Important Notes
 
 - NEVER push secrets.tfvars to version control
-- You can store .tfstate files in version control
+- You can store Terraform states (.tfstate files) in version control
+- You can also store Terraform states remotely in S3, consul, terraform enterprise using Terraform backend.
 
 Open Terraform console:
 

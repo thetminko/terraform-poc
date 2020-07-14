@@ -2,7 +2,10 @@
 
 This demo is on
 
-- storing Terraform states remotely on S3
+- template provider
+- create customized configuration files
+- build templates based on variables from Terraform resource attributes (e.g public IP)
+- can be used to create generic templates or cloud init configs
 
 ### Notes:
 

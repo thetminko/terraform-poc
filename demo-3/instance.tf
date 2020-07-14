@@ -17,3 +17,5 @@ resource "aws_instance" "demo3" {
 output "ip" {
   value = aws_instance.demo3.public_ip
 }
+
+tf-aws-instance

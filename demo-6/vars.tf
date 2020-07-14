@@ -22,3 +22,13 @@ variable "AWS_INSTANCE_TYPE" {
   type    = string
   default = "t2.micro"
 }
+
+variable "AWS_PATH_TO_PUBLIC_KEY" {
+  type    = string
+  default = "../id_rsa.pub"
+}
+
+variable "AWS_PATH_TO_PRIVATE_KEY" {
+  type    = string
+  default = "../id_rsa"
+}

@@ -1,14 +1,14 @@
-resource "aws_instance" "demo4" {
+resource "aws_instance" "demo3" {
   ami           = lookup(var.AWS_AMIS, var.AWS_REGION)
   instance_type = var.AWS_INSTANCE_TYPE
 
   tags = {
-    Name = "Demo 4"
+    Name = "Demo 3"
   }
 
   # execute locally and write private ips of aws instance to a local file
   provisioner "local-exec" {
-    command = "echo ${aws_instance.demo4.private_ip} >> private_ips.txt"
+    command = "echo ${aws_instance.demo3.private_ip} >> private_ips.txt"
   }
 }
 

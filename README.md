@@ -45,7 +45,11 @@ Create a visual representation of a configuration or execution plan
 `terraform graph`
 
 Import will try and find the infrasture resource identified with ID and import the state into terraform.tfstate with resource id ADDRESS
-`terraform [options] ADDERSS_ID`
+
+```sh
+terraform import [options] ADDERSS ID
+e.g. terraform import aws_instance.<urInstanceVariableName> <aws instance id from aws console>
+```
 
 Output any of your resources. Using NAME will only output a specific resource
 `terraform output [options] NAME`

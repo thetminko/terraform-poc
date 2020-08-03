@@ -32,6 +32,45 @@ Apply changes using output plan file. When using saved plan, no need to supply v
 
 `terraform apply changes.terraform`
 
+Destroy Terraform management infrastructures (Be very cautious as this will destroy everything)
+`terraform destroy`
+
+Rewrite Terraform configuration files to a canonical format and style
+`terraform fmt`
+
+Download and update modules
+`terraform get`
+
+Create a visual representation of a configuration or execution plan
+`terraform graph`
+
+Import will try and find the infrasture resource identified with ID and import the state into terraform.tfstate with resource id ADDRESS
+`terraform [options] ADDERSS_ID`
+
+Output any of your resources. Using NAME will only output a specific resource
+`terraform output [options] NAME`
+
+Refresh the remote state. Can identify differences between state file and remote file
+`terraform refresh`
+
+Inspect Terraform state or plan
+`terraform show`
+
+Manually mark a resource for recreation
+`terraform taint`
+
+Manually unmark a resource as tainted
+`terraform untaint`
+
+Validates the Terraform files
+`terraform validate`
+
+Prints the Terraform version
+`terraform version`
+
+Workspace management
+`terraform workspace`
+
 ### Useful links
 
 #### EC2 Ubuntu AMI Locator

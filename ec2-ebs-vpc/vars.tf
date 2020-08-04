@@ -31,3 +31,8 @@ variable "PATH_TO_PRIVATE_KEY" {
   type    = string
   default = "../id_rsa"
 }
+
+variable "AWS_EBS_DEVICE_NAME" {
+  type    = string
+  default = "/dev/xvdh"
+}

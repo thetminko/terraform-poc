@@ -16,5 +16,8 @@ resource "aws_instance" "tf-poc" {
   # security group 
   vpc_security_group_ids = [aws_security_group.tf-poc-sg.id]
 
+  # use static private ip
+  private_ip = "10.0.0.1"
+
 }
 

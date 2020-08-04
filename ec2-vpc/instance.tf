@@ -4,7 +4,7 @@ resource "aws_key_pair" "tf-poc" {
 }
 
 resource "aws_instance" "tf-poc" {
-  ami           = lookup(var.AWS_AMIS, var.AWS_REGION)
+  ami           = data.aws_ami.amzlinux2.id
   instance_type = var.AWS_INSTANCE_TYPE
 
   # keypair for ssh

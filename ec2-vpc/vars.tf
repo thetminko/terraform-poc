@@ -11,12 +11,6 @@ variable "AWS_REGION" {
   default = "ap-southeast-1"
 }
 
-variable "AWS_AMIS" {
-  type = map(string)
-  default = {
-    ap-southeast-1 = "ami-0cd31be676780afa7"
-  }
-}
 
 variable "AWS_INSTANCE_TYPE" {
   type    = string

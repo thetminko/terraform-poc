@@ -11,7 +11,6 @@ variable "AWS_REGION" {
   default = "ap-southeast-1"
 }
 
-
 variable "AWS_INSTANCE_TYPE" {
   type    = string
   default = "t2.micro"

@@ -4,7 +4,8 @@ resource "aws_key_pair" "tf-poc" {
 }
 
 resource "aws_instance" "tf-poc" {
-  ami           = data.aws_ami.amzlinux2.id
+  ami = data.aws_ami.amzlinux2.id
+
   instance_type = var.AWS_INSTANCE_TYPE
 
   # keypair for ssh
@@ -17,7 +18,11 @@ resource "aws_instance" "tf-poc" {
   vpc_security_group_ids = [aws_security_group.tf-poc-sg.id]
 
   # use static private ip
-  private_ip = "10.0.0.1"
+  private_ip = "10.0.1.4"
 
 }
 
+resource "aws_eip" "tf-poc-eip" {
+  instance = aws_instance.tf-poc.id
+  vpc      = true
+}

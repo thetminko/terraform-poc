@@ -8,3 +8,5 @@ This demo is on
 - security group allow ssh from own ip
 - attach ebs volumn to ec2 in vpc created from ec2-vpc tutorial
 - use CloudInit to run scripts after instance is up
+- assign static private ip to instances
+- route53 (DNS records)

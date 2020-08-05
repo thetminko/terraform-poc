@@ -20,12 +20,14 @@ resource "aws_instance" "tf-poc" {
   # use static private ip
   private_ip = "10.0.1.4"
 
+  # cloud init
+  # user_data = data.template_cloud_init_config.tf-cloudinit.rendered
+
+  # role
+  iam_instance_profile = aws_iam_instance_profile.tf-ec2-s3-instance-profile.name
+
 }
 
-resource "aws_eip" "tf-poc-eip" {
-  instance = aws_instance.tf-poc.id
-  vpc      = true
-}
 
 output "instance" {
   value = aws_instance.tf-poc.public_ip

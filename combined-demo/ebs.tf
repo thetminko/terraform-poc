@@ -1,5 +1,5 @@
 resource "aws_ebs_volume" "tf-poc-ebs" {
-  availability_zone = "ap-southeast-1a"
+  availability_zone = aws_subnet.tf-public-subnet-1.availability_zone
   size              = 10    # in Gbs
   encrypted         = true  # enable encryption
   type              = "gp2" # default is also gp2

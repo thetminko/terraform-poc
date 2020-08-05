@@ -10,3 +10,4 @@ This demo is on
 - use CloudInit to run scripts after instance is up
 - assign static private ip to instances
 - route53 (DNS records)
+- RDS

@@ -35,3 +35,12 @@ variable "AWS_EBS_DEVICE_NAME" {
   type    = string
   default = "/dev/xvdh"
 }
+
+variable "AWS_RDS_USER" {
+  type = string
+}
+
+variable "AWS_RDS_PASS" {
+  type = string
+}
+

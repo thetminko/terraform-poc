@@ -4,9 +4,9 @@ resource "aws_key_pair" "tf-poc" {
 }
 
 resource "aws_instance" "tf-poc" {
-  ami = data.aws_ami.amzlinux2.id
-
-  instance_type = var.AWS_INSTANCE_TYPE
+  ami               = data.aws_ami.amzlinux2.id
+  availability_zone = aws_subnet.tf-public-subnet-1.availability_zone
+  instance_type     = var.AWS_INSTANCE_TYPE
 
   # keypair for ssh
   key_name = aws_key_pair.tf-poc.key_name
@@ -25,4 +25,8 @@ resource "aws_instance" "tf-poc" {
 resource "aws_eip" "tf-poc-eip" {
   instance = aws_instance.tf-poc.id
   vpc      = true
+}
+
+output "instance" {
+  value = aws_instance.tf-poc.public_ip
 }

@@ -13,3 +13,4 @@ This demo is on
 - RDS [rds.tf](./rds.tf)
 - IAM User and Groups [iam.tf](./iam.tf)
 - IAM User roles and EC-2 instance profile [iamroles.tf](./iamroles.tf)
+- Autoscaling [autoscaling.tf](./autoscaling.tf) [autoscalingpolicy.tf](./autoscalingpolicy.tf) [sns.tf](./sns.tf)

@@ -1,4 +1,3 @@
-# find latest amazon linux 2 ami
 data "aws_ami" "amzlinux2" {
   most_recent = true
 

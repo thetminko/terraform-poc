@@ -6,7 +6,8 @@ resource "aws_launch_configuration" "tf-ecs-lc" {
   key_name             = aws_key_pair.tf-keypair.key_name
   iam_instance_profile = aws_iam_instance_profile.tf-ecs-ec2-iip.id
   security_groups      = [aws_security_group.tf-ecs-sg.id]
-  user_data            = "#!/bin/bash\necho 'ECS_CLUSTER=example-cluster' > /etc/ecs/ecs.config\nstart ecs"
+  user_data            = "#!/bin/bash\necho 'ECS_CLUSTER=tf-ecs-cluster' > /etc/ecs/ecs.config\nstart ecs"
+  # the ECS_CLUSTER name must be the same as the one specified in ecs cluster
 
   lifecycle {
     create_before_destroy = true

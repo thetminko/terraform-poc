@@ -6,3 +6,4 @@ id_rsa.pub
 **/*.tfstate
 **/*.backup
 **/.DS_Store
+**/node_modules

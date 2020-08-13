@@ -1,3 +1,18 @@
+## Setup
+
+- provider
+- vars
+- Keypair
+- getpublicip
+- iam
+- vpc
+- securitygroups
+- autoscaling
+- elb
+- ecr
+- ecs
+- ecsservice
+
 To push docker to ecr
 docker build -t <aws_account_id>.dkr.ecr.<region>.amazonaws.com/tf-poc-ecr:1> .
 
